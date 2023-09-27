@@ -19,6 +19,9 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Work+Sans:wght@500&display=swap');
+        </style>
         <Meta />
         <Links />
       </head>

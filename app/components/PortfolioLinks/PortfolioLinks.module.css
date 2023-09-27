@@ -1,0 +1,42 @@
+.PortfolioLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.PortfolioLinks h2 {
+    text-align: center;
+    padding: 3vmin;
+    margin: 2vmin;
+    background-color: #D9BFD9;
+    color: #643A71;
+    border: solid .5vmin #643A71;
+    border-radius: 2vmin;
+    font-size: 5vmin;
+    font-family: 'Londrina Outline', sans-serif;
+}
+.PortfolioLinks .list {
+    font-size: 2.5vmin;
+    text-align: center;
+    margin: 1vmin;
+    padding: 2vmin;
+    display: grid;
+    gap: 2vmin;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+.PortfolioLinks a {
+    font-family: 'Londrina Outline', sans-serif;
+    font-size: 4vmin;
+    text-decoration: none;
+    color: #223D59;
+    padding: 3vmin;
+    border: solid .5vmin #223D59;
+    border-radius: 2vmin;
+    background-color: #49BAD2;
+}
+.PortfolioLinks a:hover {
+    color: #49BAD2;
+    background-color: #223D59;
+    border-color: #49BAD2;
+}

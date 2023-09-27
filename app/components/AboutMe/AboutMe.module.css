@@ -1,0 +1,31 @@
+.AboutMe {
+    font-size: 2.5vmin;
+    text-align: center;
+    color: #D9BFD9;
+}
+
+.AboutMe h3 {
+    padding: 3vmin;
+    margin: 2vmin;
+    color: #643A71;
+    background-color: #D9BFD9;
+    border: solid .5vmin #643A71;
+    border-radius: 2vmin;
+    font-size: 4vmin;
+    font-family: 'Londrina Outline', sans-serif;
+}
+
+.AboutMe .message {
+    margin: 2vmin;
+}
+
+.AboutMe .container {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.AboutMe .container > div {
+    padding: 1.5vmin;
+}

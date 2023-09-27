@@ -1,0 +1,72 @@
+.App {
+  font-family: 'Work Sans', sans-serif;
+  color: #643A71;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr minmax(max-content, 6fr) 2fr 4fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+  gap: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 0.5fr minmax(max-content, 6fr) minmax(max-content, 4fr);
+    grid-template-areas:
+      "header header"
+      "aside nav"
+      "aside main"
+      "aside footer";
+  }
+}
+
+.App nav {
+  grid-area: nav;
+  background-color: #DDEEF8;
+}
+
+.App header {
+  font-family: 'Londrina Outline', sans-serif;
+  font-size: 4vmin;
+  grid-area: header;
+  text-align: center;
+  color: #643A71;
+  background-color: #9F7DA5;
+}
+
+.App aside {
+  grid-area: aside;
+  text-align: center;
+  background-color: #825C8B;
+  place-self: center-stretch;
+}
+
+.App main {
+  grid-area: main;
+  background-color: #D9BFD9;
+}
+
+.App footer {
+  grid-area: footer;
+  background-color: #784D98;
+  color: #D9BFD9;
+}
+
+.App .thanks {
+  text-align: center;
+  padding: 3vmin;
+  margin: 2vmin;
+  color: #643A71;
+  background-color: #D9BFD9;
+  border: solid .5vmin #643A71;
+  border-radius: 2vmin;
+  font-size: 4vmin;
+  font-family: 'Londrina Outline', sans-serif;
+}

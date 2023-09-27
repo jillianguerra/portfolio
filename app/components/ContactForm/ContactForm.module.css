@@ -1,0 +1,85 @@
+.ContactForm {
+  margin: 2vmin;
+  justify-self: center;
+  max-height: 50vmin;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "label-name input-name"
+    "label-email input-email"
+    "label-message input-message"
+    "input-submit input-submit";
+  gap: 5px;
+  justify-items: stretch;
+  align-items: start;
+}
+
+.ContactForm label {
+  text-align: center;
+  padding: 2vmin;
+  margin: 1vmin;
+  color: #643A71;
+  background-color: #D9BFD9;
+  border: solid .5vmin #643A71;
+  border-radius: 2vmin;
+  font-size: 3vmin;
+  font-family: 'Londrina Outline', sans-serif;
+}
+.ContactForm input, textarea {
+  font-family: 'Work Sans', sans-serif;
+  color: #643A71;
+  background-color: #D9BFD9;
+  border: solid .5vmin #643A71;
+  border-radius: 2vmin;
+  padding: 2vmin;
+  margin: 1vmin;
+}
+
+.ContatForm .labelName {
+  grid-area: label-name;
+}
+
+.ContatForm .inputName {
+  grid-area: input-name;
+}
+
+.ContatForm .labelEmail {
+  grid-area: label-email;
+}
+
+.ContatForm .inputEmail {
+  grid-area: input-email;
+}
+
+.ContatForm .labelMessage {
+  grid-area: label-message;
+}
+
+.ContatForm .message {
+  grid-area: input-message;
+}
+
+.ContatForm .message {
+  height: 15vmin;
+}
+
+.ContactForm .inputSubmit {
+  grid-area: input-submit;
+  text-align: center;
+  justify-self: center;
+  font-family: 'Londrina Outline', sans-serif;
+  font-size: 3vmin;
+  text-decoration: none;
+  color: #223D59;
+  padding: 2vmin;
+  margin: 1vmin;
+  border: solid .5vmin #223D59;
+  border-radius: 2vmin;
+  background-color: #49BAD2;
+}
+
+.ContactForm .inputSubmit:hover {
+  color: #49BAD2;
+  background-color: #223D59;
+  border-color: #49BAD2;
+}

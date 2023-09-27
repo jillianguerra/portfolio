@@ -1,0 +1,24 @@
+.ResumeLink {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family: 'Londrina Outline', sans-serif;
+}
+.ResumeLink a {
+    margin: 1vmin;
+    font-size: 4vmin;
+    text-decoration: none;
+    color: #223D59;
+    padding: 3vmin;
+    border: solid .5vmin #223D59;
+    border-radius: 2vmin;
+    background-color: #49BAD2;
+}   
+.ResumeLink a:hover {
+    color: #49BAD2;
+    background-color: #223D59;
+    border-color: #49BAD2;
+}
+.ResumeLink img {
+    width: 10vmin;
+}
