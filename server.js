@@ -1,9 +1,6 @@
 require('dotenv').config()
-const express = require('express')
-const app = express()
+const app = require('./app-server')
 const PORT = process.env.PORT || 3000
-
-app.use(express.static('build'))
 
 app.listen(PORT, () => {
     console.log(`Welcome to the danger zone ${PORT}`)
