@@ -21,7 +21,7 @@
     padding: 2vmin;
     display: grid;
     gap: 2vmin;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr .5fr;
     align-items: center;
     justify-items: center;
 }
@@ -39,4 +39,9 @@
     color: #49BAD2;
     background-color: #223D59;
     border-color: #49BAD2;
+}
+.PortfolioLinks .github {
+    font-size: 3vmin;
+    padding: 1vmin;
+    margin: 1vmin;
 }
