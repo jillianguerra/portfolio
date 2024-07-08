@@ -35,31 +35,28 @@
   margin: 1vmin;
 }
 
-.ContatForm .labelName {
+.ContactForm .labelName {
   grid-area: label-name;
 }
 
-.ContatForm .inputName {
+.ContactForm .inputName {
   grid-area: input-name;
 }
 
-.ContatForm .labelEmail {
+.ContactForm .labelEmail {
   grid-area: label-email;
 }
 
-.ContatForm .inputEmail {
+.ContactForm .inputEmail {
   grid-area: input-email;
 }
 
-.ContatForm .labelMessage {
+.ContactForm .labelMessage {
   grid-area: label-message;
 }
 
-.ContatForm .message {
+.ContactForm .inputMessage {
   grid-area: input-message;
-}
-
-.ContatForm .message {
   height: 15vmin;
 }
 

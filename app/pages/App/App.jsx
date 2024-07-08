@@ -1,9 +1,9 @@
-import { useState } from "react";
-import emailjs from '@emailjs/browser';
-import ContactForm from "../../components/ContactForm/ContactForm";
-import ResumeLink from "../../components/ResumeLink/ResumeLink";
+import { useState } from "react"
+// import emailjs from '@emailjs/browser'
+import ContactForm from "../../components/ContactForm/ContactForm"
+import ResumeLink from "../../components/ResumeLink/ResumeLink"
 import AboutMe from "../../components/AboutMe/AboutMe"
-import PortfolioLinks from "../../components/PortfolioLinks/PortfolioLinks";
+import PortfolioLinks from "../../components/PortfolioLinks/PortfolioLinks"
 import styles from "./App.module.css"
 
 export default function App() {
@@ -15,12 +15,6 @@ export default function App() {
   const saveContact = async (name, email, message) => {
     try {
       setContactInfo({ name: name, email: email, message: message });
-      emailjs.sendForm('service_yzwdrpf', 'service_yzwdrpf', contactInfo, 'crRrXaxj2fyS6g7h9')
-        .then((result) => {
-          console.log(result.text);
-        }, (error) => {
-          console.log(error.text);
-        });
     } catch (error) {
       console.error(error);
     }

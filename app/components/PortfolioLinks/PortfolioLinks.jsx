@@ -20,7 +20,7 @@ export default function PortfolioLinks() {
           <a className={styles.github} href="https://github.com/jillianguerra/home-depot">GitHub</a>
         </div>
         <div className={styles.list}>
-            <a href="https://vocabulary-builder.jillianguerra.me">Vocabulary Builder</a>
+            <a href="https://gkcvc5.csb.app/">Vocabulary Builder</a>
           <div>
             A vocabulary building app that grabs words from a dictionary API, and, with a click of a button, puts those words into a list. Perfect for students.
           </div>
