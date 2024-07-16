@@ -7,14 +7,11 @@ import PortfolioLinks from "../../components/PortfolioLinks/PortfolioLinks"
 import styles from "./App.module.css"
 
 export default function App() {
-  const [contactInfo, setContactInfo] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const saveContact = async (name, email, message) => {
+  const [contactInfo, setContactInfo] = useState({ name: "" });
+  const saveContact = async (data) => {
     try {
-      setContactInfo({ name: name, email: email, message: message });
+      setContactInfo({ name: data.name });
+      console.log(contactInfo)
     } catch (error) {
       console.error(error);
     }
@@ -36,7 +33,7 @@ export default function App() {
       <PortfolioLinks />
       </main>
       <footer>
-        {contactInfo && contactInfo.email ? (
+        {contactInfo && contactInfo.name ? (
           <div className={styles.thanks}>Thank you for reaching out, {contactInfo.name}!</div>
         ) : (
           <ContactForm saveContact={saveContact} />

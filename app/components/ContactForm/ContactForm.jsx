@@ -2,27 +2,21 @@ import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import styles from "./ContactForm.module.css"
 
-export default function ContactForm( {saveContact}) {
+export default function ContactForm( { saveContact }) {
   const form = useRef()
-  // const [formData, setFormData] = useState({
-  //       name: "",
-  //       email: "",
-  //       message: "",
-  //       date: ""
-  //     })
-  //   const handleChange = (e) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // }
+  const [formData, setFormData] = useState({ name: "" })
+    const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
 
     emailjs.sendForm('service_yzwdrpf', 'template_0s8jce2', form.current, 'crRrXaxj2fyS6g7h9')
     .then((result) => {
-      //saveContact(formData)
+      saveContact(formData)
       console.log(result.text)
     }, (error) => {
       console.log(error.text)
-      console.log(form.current)
     })
   }
 
@@ -32,10 +26,9 @@ export default function ContactForm( {saveContact}) {
       <label className={styles.labelName}>Name:</label>
       <input 
         type="text"
-        name="name" 
+        name="name"
         className={styles.inputName}
-       // onChange={handleChange}
-        // value={formData.name}
+        onChange={handleChange}
         />
       <label className={styles.labelEmail}>Email:</label>
       <input 
