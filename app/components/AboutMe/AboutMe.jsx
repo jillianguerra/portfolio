@@ -17,6 +17,7 @@ export default function PortfolioLinks() {
             <h3>Frameworks</h3>
             <div className={styles.container}>
                 <div>Express</div>
+                <div>Node.js</div>
                 <div>React</div>
                 <div>Mongoose</div>
             </div>
